@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  .main.container
+    .row
+        .col-xs-1.col-lg-3
+        #login.col-xs-10.col-lg-6
+            form(method='POST' action='/register')
+                .field-wrap
+                    input#usernameInput(placeholder="Username" type='text', autocomplete='off', name='name' required)
+                .field-wrap
+                    input#passwordInput(placeholder="Password" type='password',autocomplete='off', name='password' required)
+                .field-wrap
+                    input#passwordInput(placeholder="Confirm Password" type='password', autocomplete='off', name='confirmPassword' required)
+                button#loginButton.button.button-block Register
+            p or simply log in 
+                a(href="/login") here
+
+        .col-xs-1.col-lg-3

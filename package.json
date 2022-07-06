@@ -1,0 +1,20 @@
+{
+  "name": "proj",
+  "version": "0.0.1",
+  "description": "test 1 express",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "groep6",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "password-hash": "^1.2.2",
+    "path": "^0.12.7",
+    "pug": "^2.0.0-rc.4",
+    "socket.io": "^2.0.4"
+  }
+}

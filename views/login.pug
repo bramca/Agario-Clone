@@ -1,0 +1,45 @@
+extends layout
+
+block content
+
+    .star-wars-intro
+        .main-content
+            .title-content
+                p.content-header
+                    | Agario clone.
+                    br
+                    | A game by Bram & Karel, based on agar.io
+                br
+                p.content-body
+                    | Please login to our site. Instructions for doing this are quite straightfoward. First you click on the username field, then you jam your fingers on your keyboard hoping you hit the right characters. After doing that, u do just the same but now with the password field. In case the random jamming does not work, you can try creating an account. This is done by clicking on the blue "here" text, right beside the text "or Register". 
+                    br
+                    br
+                    br
+                    | Click the button "Please show this text again, I could not read it fast enough" to show this text again.
+                    a.space-button(href='./StarScroll.zip') Please show this text again, I could not read it fast enough!
+                    br
+                    | Now following are the original Star Wars crawls, so this page does not get too empty while you are filling in the form.
+                    br
+                    | Episode I
+                    br
+                    | THE PHANTOM MENACE "Turmoil has engulfed the Galactic Republic. The taxation of trade routes to outlying star systems is in dispute. Hoping to resolve the matter with a blockade of deadly battleships, the greedy Trade Federation has stopped all shipping to the small planet of Naboo. While the Congress of the Republic endlessly debates this alarming chain of events, the Supreme Chancellor has secretly dispatched two Jedi Knights, the guardians of peace and justice in the galaxy, to settle the conflict...." 
+                    br
+                    | Episode II
+                    br
+                    | ATTACK OF THE CLONES "There is unrest in the Galactic Senate. Several thousand solar systems have declared their intentions to leave the Republic. This separatist movement, under the leadership of the mysterious Count Dooku, has made it difficult for the limited number of Jedi Knights to maintain peace and order in the galaxy. Senator Amidala, the former Queen of Naboo, is returning to the Galactic Senate to vote on the critical issue of creating an ARMY OF THE REPUBLIC to assist the overwhelmed Jedi...."                    br
+                    br
+                    | You really should be logged in by now.
+                    | ...    
+    .main.container
+        .row
+            .col-xs-1.col-lg-2
+            #login.col-xs-10.col-lg-7(align="center")
+                form(method='POST' action='/login')
+                    .field-wrap
+                        input#usernameInput(placeholder="Username" type='text', required='', autocomplete='off', name='name')
+                    .field-wrap
+                        input#passwordInput(placeholder="Password" type='password', required='', autocomplete='off', name='password')
+                    button#loginButton.button.button-block Log In
+                p(style="color:white;font-size:1.7rem") or Register 
+                    a(href="/register" style="font-size:1.8rem") here
+            .col-xs-1.col-lg-3

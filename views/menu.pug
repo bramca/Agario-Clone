@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  .main.container
+    .row
+        .col-xs-1.col-lg-3
+        .col-xs-10.col-lg-6(align="center")
+          h1.display-4.m-b-2 Menu
+              hr
+              .row  
+                a(href="/game")
+                    button.button Start game
+              br
+              .row
+                a(href="/highscores")
+                  button.button Highscores
+              br
+              .row
+                a(href="/logout")
+                  button.button Log out
+
+
+        .col-xs-1.col-lg-3
