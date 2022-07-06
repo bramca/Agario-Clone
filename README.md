@@ -1,6 +1,6 @@
-# Agario
+# Agario Clone
 ![agario game](./img/agario_game.PNG)
-*Created in 2017*
+*Created in 2017*<br>
 A clone of the popular MMO game [Agar.io](https://agar.io/).<br>
 It is written as a multiplayer server with a login page, the basic game and highscores.
 
